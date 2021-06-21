@@ -1,0 +1,43 @@
+header { text-align: center;
+    background-color: blue;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    margin: 2%;
+
+}
+body { background-color: black; margin: 2%;}
+
+article {background-color: aqua;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    margin: 2%;
+    
+
+}
+
+section {
+    border-color: white;
+    border-style: solid;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 2%;
+
+}
+div {background-color: aqua;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    margin: 2%;
+
+}
+ footer {text-align: center;
+    background-color: blue;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    margin: 2%;}
