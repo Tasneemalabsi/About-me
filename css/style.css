@@ -8,24 +8,13 @@ header { text-align: center;
 }
 body { background-color: black; margin: 2%;}
 
-article {background-color: aqua;
-    color: black;
-    border-style: solid;
-    border-color: white;
-    text-align: center;
-    margin: 2%;
-    
-
-}
-
-section {
-    border-color: white;
-    border-style: solid;
-    background-color: blue;
+ul {background-color:black;
     color: white;
+    border-style: solid;
+    border-color: white;
     text-align: center;
     margin: 2%;
-
+    list-style-type:circle;
 }
 div {background-color: aqua;
     color: black;
@@ -35,9 +24,11 @@ div {background-color: aqua;
     margin: 2%;
 
 }
- footer {text-align: center;
-    background-color: blue;
+ ol {text-align:start;
+    background-color:black;
     color: white;
     border-color: white;
     border-style: solid;
-    margin: 2%;}
+    margin: 2%;
+list-style-type: decimal;
+}
