@@ -72,23 +72,35 @@ else {
  for (let i=1; i<=4; i++) {
      let q6 = Number(prompt("can you guess how many siblings do I have ?"));
      window.qq = q6;
-     if (q6>6){alert("oops! too high");}
-     else if (q6<6) {alert("that's too low");}
-     if (q6 === 6) {alert("yes, that's correct !")
+     if (q6>6){alert("oops! too high");
+    //console.log("oops! that's too high");
+ }
+     else if (q6<6) {alert("that's too low");
+    //console.log("that's too low")
+}
+     if (q6 === 6) {alert("yes, that's correct !");
+     //console.log("yes, that's correct !")
          break;}
  }
- if(qq !=6){alert ("well, thank you I have 6 siblings");}
+ if(qq !=6){alert ("well, thank you I have 6 siblings");
+//console.log("well, thank you I have 6 siblings");
+ }
 
   let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
   for (let i=0; i<=5; i++) {
        let q7 = prompt("can you guess one of my favorite movies ?");
        window.qq2=q7;
-     if (q7 != favMovies[0] && q7 != favMovies[1] && q7 != favMovies[2] && q7 != favMovies[3] && q7 != favMovies[4]){alert("well that's not true ! try again please");}
+     if (q7 != favMovies[0] && q7 != favMovies[1] && q7 != favMovies[2] && q7 != favMovies[3] && q7 != favMovies[4]){alert("well that's not true ! try again please");
+    //console.log(("well that's not true ! try again please");)
+  }
        if (q7 == favMovies[0] || q7 == favMovies[1] || q7 == favMovies[2] || q7 == favMovies[3] || q7 == favMovies[4]){alert("That's correct! Thank you");
-   break;}
+   //console.log("That's correct! Thank you");
+       break;}
    }
 
-  if(qq2 != favMovies[0] && qq2 != favMovies[1] && qq2 != favMovies[2] && qq2 != favMovies[3] && qq2 != favMovies[4]){alert ("well, thanks for trying, my favorite movies are: " + favMovies);}
+  if(qq2 != favMovies[0] && qq2 != favMovies[1] && qq2 != favMovies[2] && qq2 != favMovies[3] && qq2 != favMovies[4]){alert ("well, thanks for trying, my favorite movies are: " + favMovies);
+//console.log("well, thanks for trying, my favorite movies are: " + favMovies);
+  }
 
 // let q7 = prompt("can you guess one of my favorite movies ?");
 // let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
@@ -126,6 +138,7 @@ let score = 0
     if (qq === 6) {score++;}
     if (qq2 == favMovies[0] || qq2 == favMovies[1] || qq2 == favMovies[2] || qq2 == favMovies[3] || qq2 == favMovies[4]){score++}
     alert ("thanks for playing my game, your score is: " + score + " out of 7");
+    //console.log("thanks for playing my game, your score is: " + score + " out of 7");
     
   
     
