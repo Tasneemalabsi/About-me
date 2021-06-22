@@ -1,4 +1,5 @@
 "use strict"
+let score = 0
 alert("welcome to my website")
 let userName = prompt("what's your name?")
 alert ("welcome, " + userName + ", I am pleased to have you here !")
@@ -86,21 +87,21 @@ else {
 //console.log("well, thank you I have 6 siblings");
  }
 
-  let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
-  for (let i=0; i<=5; i++) {
-       let q7 = prompt("can you guess one of my favorite movies ?");
-       window.qq2=q7;
-     if (q7 != favMovies[0] && q7 != favMovies[1] && q7 != favMovies[2] && q7 != favMovies[3] && q7 != favMovies[4]){alert("well that's not true ! try again please");
-    //console.log(("well that's not true ! try again please");)
-  }
-       if (q7 == favMovies[0] || q7 == favMovies[1] || q7 == favMovies[2] || q7 == favMovies[3] || q7 == favMovies[4]){alert("That's correct! Thank you");
-   //console.log("That's correct! Thank you");
-       break;}
-   }
+//   let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
+//   for (let i=0; i<=5; i++) {
+//        let q7 = prompt("can you guess one of my favorite movies ?");
+//        window.qq2=q7;
+//      if (q7 != favMovies[0] && q7 != favMovies[1] && q7 != favMovies[2] && q7 != favMovies[3] && q7 != favMovies[4]){alert("well that's not true ! try again please");
+//     //console.log(("well that's not true ! try again please");)
+//   }
+//        if (q7 == favMovies[0] || q7 == favMovies[1] || q7 == favMovies[2] || q7 == favMovies[3] || q7 == favMovies[4]){alert("That's correct! Thank you");
+//    //console.log("That's correct! Thank you");
+//        break;}
+//    }
 
-  if(qq2 != favMovies[0] && qq2 != favMovies[1] && qq2 != favMovies[2] && qq2 != favMovies[3] && qq2 != favMovies[4]){alert ("well, thanks for trying, my favorite movies are: " + favMovies);
+//   if(qq2 != favMovies[0] && qq2 != favMovies[1] && qq2 != favMovies[2] && qq2 != favMovies[3] && qq2 != favMovies[4]){alert ("well, thanks for trying, my favorite movies are: " + favMovies);
 //console.log("well, thanks for trying, my favorite movies are: " + favMovies);
-  }
+  //}
 
 // let q7 = prompt("can you guess one of my favorite movies ?");
 // let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
@@ -114,20 +115,27 @@ else {
 
 // if (q7!=favMovies[i]) {alert("thanks for trying ! mu favorite movies are: ") + favMovies}
 
-// let favMovies= ["Joker", "forgotten", "circle", "inception","prisoners"];
-// let sample= favMovies[~~(Math.random() * favMovies.length)];
-// for (let i=0; i<=5; i++) {
-//      let q7 = prompt("can you guess one of my favorite movies ?");
-//      window.qq2=q7;
-//     if (q7 != sample){alert("well that's not true ! try again please");}
-//      if (q7 == sample){alert("That's correct! Thank you");
-//  break;}
-//  }
+let favMovies = ["Joker", "forgotten", "circle", "inception","prisoners"];
+     for (let i = 0; i <= 5; i++) {
+        let q7 = prompt('Can you guess my favorite movie?');
+        for (let j = 0; j < favMovies.length; j++){
+            if (q7 === favMovies[j]) {
+                alert("that's correct! thank you");
+                //console.log("that's correct! thank you";)
+                score++;
+                i = 6;
+                break;
+            }
+        }
+        if (i !==6){
+            alert("Sorry wrong answer, try again");
+            //console.log("Sorry wrong answer, try again");
+        }
+    }
 
-// if(qq2 != sample){alert ("well, thanks for trying, my favorite movies are: " + favMovies);}
 
-
-let score = 0
+alert("thank you, my favorite movies are: "+ favMovies);
+//console.log("thank you, my favorite movies are: "+ favMovies);
 
 
     if (q1 == "yes") {score++;}
@@ -136,9 +144,11 @@ let score = 0
     if (q4 == "yes"){score++;}
     if(q5 == "yes"){score++;}
     if (qq === 6) {score++;}
-    if (qq2 == favMovies[0] || qq2 == favMovies[1] || qq2 == favMovies[2] || qq2 == favMovies[3] || qq2 == favMovies[4]){score++}
     alert ("thanks for playing my game, your score is: " + score + " out of 7");
     //console.log("thanks for playing my game, your score is: " + score + " out of 7");
+
+    
+    
     
   
     
