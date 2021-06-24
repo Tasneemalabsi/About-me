@@ -4,31 +4,63 @@ header { text-align: center;
     border-color: white;
     border-style: solid;
     margin: 2%;
+    padding: 2%;
+    height: 110px;
+    position: relative;
 
 }
-body { background-color: black; margin: 2%;}
+#title {
+    position: sticky;
+    font-size: xx-large;
+    padding: 1%;
+    position: sticky;
+    top: 0px;
+    left: 100px;
+}
+h2 {font-size: x-large;
+padding: 1%;
+font-weight: bold;}
+body { background-color: black; margin: 2%;
+position: relative;
+height: 1000px;
+border-spacing: 10px;
+width: 80%;}
 
 ul {background-color:black;
+    color: white;
+    border-style: solid;
+    border-color: violet;
+    text-align: center;
+    margin: 2%;
+   line-height : 50px;
+ list-style-type: circle; 
+ font-size: large;
+ position: relative;
+}
+div {background-color: blue;
     color: white;
     border-style: solid;
     border-color: white;
     text-align: center;
     margin: 2%;
-    list-style-type:circle;
-}
-div {background-color: aqua;
-    color: black;
-    border-style: solid;
-    border-color: white;
-    text-align: center;
-    margin: 2%;
+    line-height:50px;
+    border-spacing: 10px;
+    font-size: medium;
+    position: relative;
+
 
 }
- ol {text-align:start;
+  footer{text-align:center;
     background-color:black;
     color: white;
     border-color: white;
     border-style: solid;
     margin: 2%;
-list-style-type: decimal;
+line-height: 80px;
+font-weight: bold;
+position: relative;
+padding: 2%;
+}
+ol {
+    list-style-type: decimal;
 }

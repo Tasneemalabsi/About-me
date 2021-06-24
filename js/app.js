@@ -9,6 +9,7 @@ function first(){ let q1 = prompt("Is my age 23 ?").toUpperCase();
 if (q1 == "YES") {
     //console.log("correct");
     alert("correct");
+    score++;
 }
 else {
     //console.log ("sorry, the right answer has to be yes");
@@ -25,6 +26,7 @@ function seconed() {let q2 = prompt("am I a lazy person ?").toLowerCase();
 if (q2 == "yes") {
     //console.log("correct! I am a very lazy person, I hope I can change that :D");
    alert("correct! I am a very lazy person, I hope I can change that :D");
+   score++;
 }
 else{
     //console.log ("sorry, the right answer has to be yes");
@@ -42,6 +44,7 @@ alert("well that's not true, my major was physics");
 }
 else { //console.log("correct!")
     alert("correct!");
+    score++;
 }
 }
 function fourth(){ let q4 = prompt("is my favorite food Mansaf ?").toLowerCase();
@@ -51,6 +54,7 @@ function fourth(){ let q4 = prompt("is my favorite food Mansaf ?").toLowerCase()
 if (q4 == "yes") {
     //console.log("yay ! thank you for knowing that about me")
     alert("yay ! thank you for knowing that about me");
+    score++;
 }
 else {
     //console.log ("My favorite food is actaully mansaf, so it's a yes ^^")
@@ -65,6 +69,7 @@ function fifth (){ let q5 = prompt("do you think I'm a good person?").toLowerCas
 if (q5 == "yes") {
     //console.log("thank you! you're the best")
 alert("thank you! you're the best");
+score++;
 }
 else {
     //console.log ("well that's understandable")
@@ -85,6 +90,7 @@ else {
 }
      if (q6 === 6) {alert("yes, that's correct !");
      //console.log("yes, that's correct !")
+     score++;
          break;}
  }
  if(qq !=6){alert ("well, thank you I have 6 siblings");
